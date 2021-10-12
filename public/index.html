@@ -50,6 +50,7 @@
 
   body {
   margin: 0;
+  width: 100vw; height: 100vh;
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,11 +58,27 @@
   color: #fdfbf9;
   }
 
+  main div {
+    width: 100vw; height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center; align-items: center;
+  }
+
+  .sc-dlfnuX {
+    height: 20vh;
+  }
+
+  main p {
+    position: absolute;
+  }
+
   code {
     font-family: 'Manrope', sans-serif;
   }
 
   .MuiButton-root {
+    width: max-content; height: max-content;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -70,7 +87,7 @@
 
   .MuiButtonBase-root {
     color: inherit;
-    border: 2px solid #fdfbf9;
+    border: 3px solid #fdfbf9;
     cursor: pointer;
     margin: 0;
     display: inline-flex;
@@ -91,7 +108,7 @@
 
   .MuiButton-containedPrimary:hover {
     background-color: #3e83d1;
-    border: 4px solid white;
+    border: 3px solid white;
     color: #fdfbf9;
   }
 
@@ -102,6 +119,14 @@
   .MuiButton-contained:hover {
     box-shadow: none;
     background-color: transparent;
+  }
+
+  .MuiListItem-root button {
+    border: none;
+  }
+
+  .MuiIconButton-root {
+    border: none;
   }
 
 </style>
